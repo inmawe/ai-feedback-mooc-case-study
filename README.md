@@ -1,30 +1,37 @@
-# AI-Mediated Feedback in MOOCs: Case Study Implementation
+# AI-Mediated Feedback in MOOC Case Study
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+This repository serves as the **main entry point** for our study on AI-mediated feedback in a MOOC case study (submitted to LAK 2026).  
+The project investigates whether personalized, AI-generated feedback improves learners’ self-efficacy, motivation, feedback perception, and performance in SQL and machine learning tasks.  
 
-Implementation code for the paper: **Does AI Feedback Improve Learning in MOOCs? Findings from a Randomized Trial**
+## 📚 Context
+The intervention was implemented in the MITx *Supply Chain Technology and Systems* MOOC.  
+Learners worked on a case study involving SQL queries and machine learning tasks.  
+- **Control group**: received static, pre-authored explanations.  
+- **Treatment group**: received real-time, AI-generated personalized feedback.  
 
-## Overview
-The app uses an AI API (OpenAI, Gemini, or Claude) to evaluate and provide feedback on six different problems related to data retrieval from databases using mySQL and basic understanding of ML concepts. These were originally implemented in MOOC about supply chain management.
+## ⚙️ Implementation Notes
+The AI-mediated feedback was implemented using **Streamlit apps**, each corresponding to a case study question.  
+- Learners in the Treatment group interacted with these apps, which provided **real-time, AI-generated feedback**.  
+- Apps were then **embedded into the edX platform** via iframes, so learners could complete the exercises seamlessly inside the MOOC environment.  
 
-## Prerequisites
-- Python 3.6 or later
-- pip
-- virtualenv (optional but recommended)
-- OpenAI, Claude, and/or Google Gemini API key(s)
+## 🔗 Repositories
 
-## Credit
-This app is based on the 'AI MicroApp (Assistant)' by John Swope found at https://github.com/jswope00/AI-Microapp-Template-Assistant/tree/main
+- [SQL Question 1: Basic Data Retrieval](https://github.com/MITx-CTL-SC4x/w10-caseStudy-sql1)  
+- [SQL Question 2: Intermediate Querying](https://github.com/MITx-CTL-SC4x/w10-caseStudy-sql2)  
+- [SQL Question 3: Advanced SQL Joins](https://github.com/MITx-CTL-SC4x/w10-caseStudy-sql3)  
+- [ML Question 1: Feature Selection](https://github.com/MITx-CTL-SC4x/w10-caseStudy-ml1)  
+- [ML Question 2: Model Choice](https://github.com/MITx-CTL-SC4x/w10-caseStudy-ml2)  
+- [ML Question 3: Interpretation](https://github.com/MITx-CTL-SC4x/w10-caseStudy-ml3)  
 
-## 📖 Citation
+## 📝 Citation
+If you use this material, please cite our LAK 2026 paper:  
 
-If you use this code, please cite:
 ```bibtex
-@inproceedings{author2013ai,
-  title={Does AI Feedback Improve Learning in MOOCs? Findings from a Randomized Trial},
-  author={author1,author2},
-  booktitle={Proceedings of the Sixteenth International Conference on Learning Analytics and Knowledge},
-  pages={--},
-  year={2026}
+@inproceedings{author12026ai,
+  author    = {Author1 and Author2},
+  title     = {Does AI Feedback Improve Learning in MOOCs? Findings from a Randomized Trial},
+  booktitle = {Proceedings of the 16th International Conference on Learning Analytics \& Knowledge (LAK 2026)},
+  year      = {2026},
+  publisher = {ACM},
+  doi       = {10.1145/XXXXXXX.XXXXXXX}
 }
