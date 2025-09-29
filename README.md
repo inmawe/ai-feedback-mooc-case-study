@@ -5,7 +5,17 @@
 
 Implementation code for the paper: **Does AI Feedback Improve Learning in MOOCs? Findings from a Randomized Trial**
 
-This repository includes all necesary information and scripts to understand and replicate our AI-mediated feedback implementation in a case study in a MOOC. 
+## Overview
+The app uses an AI API (OpenAI, Gemini, or Claude) to evaluate and provide feedback on six different problems related to data retrieval from databases using mySQL and basic understanding of ML concepts. These were originally implemented in MOOC about supply chain management.
+
+## Prerequisites
+- Python 3.6 or later
+- pip
+- virtualenv (optional but recommended)
+- OpenAI, Claude, and/or Google Gemini API key(s)
+
+## Credit
+This app is based on the 'AI MicroApp (Assistant)' by John Swope found at https://github.com/jswope00/AI-Microapp-Template-Assistant/tree/main
 
 ## 📖 Citation
 
